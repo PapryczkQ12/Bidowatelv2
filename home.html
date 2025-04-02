@@ -88,4 +88,19 @@
     
     <script src="assets/bar.js"></script>
     <script src="assets/manifest.js"></script>
+    <script>
+        function sendTo(page) {
+            const pages = {
+                home: 'home.html',
+                documents: 'documents.html',
+                services: 'services.html',
+                qr: 'qr.html',
+                more: 'more.html',
+                card: 'id.html'
+            };
+            if (pages[page]) {
+                window.location.href = pages[page];
+            }
+        }
+    </script>
 </body>

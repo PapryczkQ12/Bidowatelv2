@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="bottom">
-        <p class="login">Zaloguj się</p>
+        <p class="login" onclick="redirectToHome()">Zaloguj się</p>
         <div class="data">
             <img class="logo_other" style="height: 20px;" src="assets/images/COI.png">
             <img class="logo_other" src="assets/images/mc.svg">
@@ -42,5 +42,10 @@
     </div>
     <script src="assets/login.js?v=1.1"></script>
     <script src="assets/manifest.js"></script>
+    <script>
+        function redirectToHome() {
+            window.location.href = "home.html";
+        }
+    </script>
 </body>
 </html>
